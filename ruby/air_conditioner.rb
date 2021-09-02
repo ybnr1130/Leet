@@ -14,6 +14,7 @@ air = input_lines[2].to_i
 temperature_diff = (room - air_conditioner).abs
 
 require_time = 0
+require_time2 = 0
 
 if temperature_diff < 5
   # 処理
@@ -31,10 +32,10 @@ if air == 1 then
   require_time  
 elsif air == 2 then
   # 処理
-  require_time = require_time - 5
+  require_time2 = require_time - 5
 elsif air == 3 then
   # 処理
-  require_time = require_time - 10
+  require_time2 = require_time - 10
 else
   p "1~3を入力してください。"
   exit
